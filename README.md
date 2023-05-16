@@ -1,11 +1,25 @@
 # Answers
 1. Imagine there is a file full of Twitter tweets by various users and you are provided a set of words that indicates racial slurs. Write a program that can indicate the degree of profanity for each sentence in the file. Write in any programming language (preferably in Python) - make any assumptions, but remember to state them.
 
+https://github.com/shivee-yadav/Answers/blob/main/racial_slurs.py
+
 In this program, we define two main functions:
 
-calculate_profanity_degree(tweet, racial_slurs): This function takes a tweet and the set of racial slurs as input. It removes non-alphanumeric characters, converts the tweet to lowercase, and splits it into individual words. It then counts the number of racial slurs present in the tweet and calculates the profanity degree as a percentage of racial slurs to total words. The profanity degree is returned.
+Defining the calculate_profanity_degree function:
+This function takes two parameters: the tweet text and a list of racial slurs. It calculates the profanity degree of the tweet by counting the occurrences of racial slurs in a case-insensitive manner. The profanity degree is expressed as a percentage of racial slurs found in the tweet.
 
-analyze_tweets(file_path, racial_slurs): This function reads the file containing the Twitter tweets line by line. It strips each line to remove leading/trailing whitespace and passes the tweet along with the set of racial slurs to the calculate_profanity_degree function. It then prints the tweet and the corresponding profanity degree.
+Defining the main function:
+The main function is the entry point of the program. It assumes the racial slurs are provided as a list of words and the tweets are stored in a file called "tweets.txt" (with one tweet per line).
+
+Inside the main function:
+
+It opens the "tweets.txt" file and reads the tweets into a list.
+It iterates over each tweet in the list.
+For each tweet, it removes any leading/trailing whitespace.
+It calls the calculate_profanity_degree function to calculate the profanity degree of the tweet.
+It prints the tweet and the corresponding profanity degree.
+Calling the main function:
+Finally, the program calls the main function to execute the code.
 
 
 2. Which is an interesting data set you discovered recently? Why is it your favorite? No datasets on Kaggle, please.
