@@ -41,6 +41,8 @@ While Kaggle hosts numerous excellent datasets, the Open Images Dataset V6 stand
 3. This question is to test your aptitude for writing small shell scripts on Unix. You are given this URL amfiindia.com/spages/NAVAll.txt
 Write a shell script that extracts the Scheme Name and Asset Value fields only and saves them in a csv file.
 
+https://github.com/shivee-yadav/Answers/blob/main/extract_scheme_data.sh
+
 Here's how the script works:
 
 The script starts by setting the URL (amfiindia.com/spages/NAVAll.txt) and the desired output file name (scheme_data.csv).
